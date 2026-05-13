@@ -20,7 +20,7 @@ function filtrarDados(dados)
 
 function estilizarMural() {
     body.className = "bg-amber-50 text-slate-900 flex items-center justify-center transition-colors duration-300 min-h-screen";
-    main.classList.add("columns-3", "gap-5", "*:mt-5", "pt-20" );
+    main.classList.add("columns-1", "md:columns-2", "lg:columns-3", "gap-5", "*:mt-5", "pt-20" );
 
 }
 estilizarMural();
@@ -48,11 +48,11 @@ function inserirIMG(url, author) {
 
 // Criar botão de toggle de tema
 const themeToggle = document.createElement('button');
-themeToggle.className = 'absolute top-8 right-8 w-[40px] h-[40px] rounded-full bg-white shadow-md flex items-center justify-center transition-colors duration-300 hover:bg-slate-100 z-10';
+themeToggle.className = 'absolute top-4 right-4 md:top-8 md:right-8 w-12 h-12 md:w-16 md:h-16 rounded-full bg-white shadow-md flex items-center justify-center transition-colors duration-300 hover:bg-slate-100 z-10';
 const themeIcon = document.createElement('img');
 themeIcon.src = './moon-regular-full.svg';
 themeIcon.alt = 'Alternar tema';
-themeIcon.className = 'w-6 h-6';
+themeIcon.className = 'w-6 h-6 md:w-8 md:h-8';
 themeToggle.appendChild(themeIcon);
 body.appendChild(themeToggle);
 

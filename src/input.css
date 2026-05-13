@@ -1,1 +1,4 @@
 @import "tailwindcss";
+.tema-dark {
+ background-color: #272727 bg-slate-900 text-amber-50;
+}
